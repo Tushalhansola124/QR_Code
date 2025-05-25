@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #262626;
+}
+.contaniter{
+    width:400px;
+    padding: 25px 35px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.contaniter p{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 8px;
+}
+.contaniter input{
+    width:100%;
+    height: 50px;
+    border:1px solid #494eea;
+    outline:0;
+    padding: 10px;
+    margin:10px 0 20px;
+    border-radius: 5px;
+}
+.contaniter button{
+    width:40%;
+    height:40%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 10px;
+    outline: 0;
+    border:none;
+    text-align: center;
+    justify-content: center;
+    background-color: #494eea;
+    color:white;
+    font-size:15px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+ #imgbox{
+   width:200px;
+   border-radius: 5px;
+   max-height: 0;
+   overflow: hidden;
+  transition:max-height 1s;
+}
+#imgbox{
+    width:100%;
+    padding-left:25%;
+    padding-right:25%;
+}
+#imgbox.show-img{
+    max-height: 300px;
+    margin:10px auto;
+    border:1px solid #d1d1d1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.error{
+    animation: shake 0.1s linear 20;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform:translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
+
